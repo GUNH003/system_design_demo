@@ -1,5 +1,6 @@
 # System Design Demo
 This demo showcases a high-throughput, horizontally scalable system implementing a **write-aside cache** architecture. The Servlet serves as an API endpoint, conforming to the **UPIC SkiDataAPI (v2.0)** (`https://app.swaggerhub.com/apis/cloud-perf/SkiDataAPI/2.0`), supporting both POST and GET operations for skier lift ride data.
+![design_diagram](./design.png)
 ## Key Features
 * High-throughput writes using an asynchronous Producer-Consumer pattern via RabbitMQ.
 * Decoupled architecture allowing for horizontal scalability.
